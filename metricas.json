@@ -1,0 +1,93 @@
+{
+  "modelo": "Regresión logística (class_weight=balanced)",
+  "n_train": 688,
+  "n_test": 230,
+  "accuracy": 0.6521739130434783,
+  "ic95": [
+    0.5885766934893496,
+    0.7107712411809571
+  ],
+  "precision_macro": 0.6086008205823874,
+  "recall_macro": 0.6100926061077864,
+  "f1_macro": 0.6091676107756215,
+  "por_clase": {
+    "Bajo": {
+      "precision": 0.7272727272727273,
+      "recall": 0.7529411764705882,
+      "f1": 0.7398843930635838,
+      "support": 85
+    },
+    "Medio": {
+      "precision": 0.3673469387755102,
+      "recall": 0.34615384615384615,
+      "f1": 0.3564356435643564,
+      "support": 52
+    },
+    "Alto": {
+      "precision": 0.7311827956989247,
+      "recall": 0.7311827956989247,
+      "f1": 0.7311827956989247,
+      "support": 93
+    }
+  },
+  "orden": [
+    "Bajo",
+    "Medio",
+    "Alto"
+  ],
+  "matriz": [
+    [
+      64,
+      13,
+      8
+    ],
+    [
+      17,
+      18,
+      17
+    ],
+    [
+      7,
+      18,
+      68
+    ]
+  ],
+  "cv": {
+    "accuracy_mean": 0.6075848936845446,
+    "accuracy_std": 0.039984758823575786,
+    "f1_mean": 0.5776919941575307,
+    "f1_std": 0.03357602334384751
+  },
+  "comparacion": [
+    {
+      "Modelo": "Regresión logística (corte 2)",
+      "CV accuracy": "0.642 ± 0.020",
+      "CV F1 macro": "0.544 ± 0.008",
+      "Test accuracy": 0.674,
+      "Test F1 macro": 0.572,
+      "Recall Alto": 0.849,
+      "Recall Medio": 0.135,
+      "Alto→Bajo": 9
+    },
+    {
+      "Modelo": "Regresión logística (class_weight=balanced)",
+      "CV accuracy": "0.608 ± 0.040",
+      "CV F1 macro": "0.578 ± 0.034",
+      "Test accuracy": 0.652,
+      "Test F1 macro": 0.609,
+      "Recall Alto": 0.731,
+      "Recall Medio": 0.346,
+      "Alto→Bajo": 7
+    },
+    {
+      "Modelo": "Árbol de decisión (prof. 2)",
+      "CV accuracy": "0.632 ± 0.024",
+      "CV F1 macro": "0.594 ± 0.034",
+      "Test accuracy": 0.591,
+      "Test F1 macro": 0.55,
+      "Recall Alto": 0.742,
+      "Recall Medio": 0.308,
+      "Alto→Bajo": 10
+    }
+  ]
+}

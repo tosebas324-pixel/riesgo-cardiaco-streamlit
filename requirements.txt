@@ -1,0 +1,8 @@
+# Fija la MISMA versión de scikit-learn con la que guardaste el .joblib
+# (la imprime la última celda del notebook). Ajusta las demás si lo deseas.
+streamlit>=1.40
+scikit-learn==1.9.1
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+joblib>=1.3
